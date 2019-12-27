@@ -10,4 +10,6 @@
     <string name="textView_cb">CB için gereken final notu:</string>
     <string name="textView_cc">CC için gereken final notu:</string>
     <string name="textView_dc">DC ile şartlı geçmek için gereken final notu:</string>
+    <string name="textView_final">Final</string>
+    <string name="textView_ortalama">Ortalama:</string>
 </resources>

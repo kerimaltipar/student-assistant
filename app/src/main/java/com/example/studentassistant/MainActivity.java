@@ -20,4 +20,11 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, GecmeNotuHesaplaActivity.class);
         startActivity(i);
     }
+
+    public void  OrtalamaHesapla(View view)
+    {
+        finish();
+        Intent i = new Intent(this, GecmeNotuHesaplaActivity.class);
+        startActivity(i);
+    }
 }
