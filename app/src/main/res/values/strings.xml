@@ -2,4 +2,12 @@
     <string name="app_name">Student Assistant</string>
     <string name="btn_gecme_notu">GECME NOTU HESAPLA</string>
     <string name="btn_ortalama_hesapla">ORTALAMA HESAPLA</string>
+    <string name="textView_vize">Vize</string>
+    <string name="btn_hesapla">HESAPLA</string>
+    <string name="textView_aa">AA için gereken final notu:</string>
+    <string name="textView_bb">BB için gereken final notu:</string>
+    <string name="textView_ba">BA için gereken final notu:</string>
+    <string name="textView_cb">CB için gereken final notu:</string>
+    <string name="textView_cc">CC için gereken final notu:</string>
+    <string name="textView_dc">DC ile şartlı geçmek için gereken final notu:</string>
 </resources>
