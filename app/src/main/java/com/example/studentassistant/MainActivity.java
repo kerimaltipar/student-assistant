@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void  OrtalamaHesapla(View view)
     {
         finish();
-        Intent i = new Intent(this, GecmeNotuHesaplaActivity.class);
+        Intent i = new Intent(this, OrtalamaHesaplaActivity.class);
         startActivity(i);
     }
 }
