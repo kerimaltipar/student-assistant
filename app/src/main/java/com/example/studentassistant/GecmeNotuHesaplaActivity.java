@@ -3,6 +3,7 @@ package com.example.studentassistant;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -14,7 +15,7 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_gecme_notu_hesapla);
     }
 
-    public void Hesapla()
+    public void Hesapla(View view)
     {
         EditText vize = findViewById(R.id.editText);
         String str_vize = vize.getText().toString();
