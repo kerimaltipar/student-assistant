@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class GecmeNotuHesaplaActivity extends AppCompatActivity {
 
     @Override
@@ -22,18 +24,22 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
         String str_vize = vize.getText().toString();
         int vize_num = Integer.parseInt(str_vize);
 
+        //Log.d("vize_num", String.valueOf(vize_num));
+
         // AA
-        float aa = (410 - (vize_num * 2)) / 3;
+        float aa = (410 - ((float)vize_num * 2)) / 3;
         // BA
-        float ba = (370 - (vize_num * 2)) / 3;
+        float ba = (370 - ((float)vize_num * 2)) / 3;
         // BB
-        float bb = (325 - (vize_num * 2)) / 3;
+        float bb = (325 - ((float)vize_num * 2)) / 3;
         // CB
-        float cb = (290 - (vize_num * 2)) / 3;
+        float cb = (290 - ((float)vize_num * 2)) / 3;
         // CC
-        float cc = (250 - (vize_num * 2)) / 3;
+        float cc = (250 - ((float)vize_num * 2)) / 3;
         // DC
-        float dc = (200 - (vize_num * 2)) / 3;
+        float dc = (200 - ((float)vize_num * 2)) / 3;
+
+
 
         TextView textView_aa = findViewById(R.id.textView2);
         TextView textView_ba = findViewById(R.id.textView3);
@@ -42,13 +48,13 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
         TextView textView_cc = findViewById(R.id.textView8);
         TextView textView_dc = findViewById(R.id.textView9);
 
-        textView_aa.append(String.valueOf(aa));
-        textView_ba.append(String.valueOf(ba));
-        textView_bb.append(String.valueOf(bb));
-        textView_cb.append(String.valueOf(cb));
-        textView_cc.append(String.valueOf(cc));
-        textView_dc.append(String.valueOf(dc));
+        textView_aa.append(String.valueOf(Math.round(aa)));
+        textView_ba.append(String.valueOf(Math.round(ba)));
+        textView_bb.append(String.valueOf(Math.round(bb)));
+        textView_cb.append(String.valueOf(Math.round(cb)));
+        textView_cc.append(String.valueOf(Math.round(cc)));
+        textView_dc.append(String.valueOf(Math.round(dc)));
 
-        Log.d("var", String.valueOf(aa));
+        //Log.d("aa", String.valueOf(aa));
     }
 }
