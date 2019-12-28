@@ -33,12 +33,63 @@ public class OrtalamaHesaplaActivity extends AppCompatActivity {
 
         float ortalama = (((float)vize_num * 2) / 5) + (((float)final_num * 3) / 5);
 
+
         TextView textView_ortalama = findViewById(R.id.textView10);
         textView_ortalama.setText(ortalama_text);
         textView_ortalama.append(String.valueOf(ortalama));
+        textView_ortalama.append(" " + FindGrade(ortalama));
 
         // Close keyboard
         InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+    }
+
+    public String FindGrade(float ortalama)
+    {
+        // AA
+        if(ortalama >= 82)
+        {
+            return "AA";
+        }
+        // BA
+        else if(ortalama >= 74)
+        {
+            return "BA";
+        }
+        // BB
+        else if(ortalama >= 65)
+        {
+            return "BB";
+        }
+        // CB
+        else if(ortalama >= 58)
+        {
+            return "CB";
+        }
+        // CC
+        else if(ortalama >= 50)
+        {
+            return "CC";
+        }
+        // DC
+        else if (ortalama >= 40)
+        {
+            return "DC";
+        }
+        // DD
+        else if(ortalama >= 35)
+        {
+            return "DD";
+        }
+        // FD
+        else if(ortalama >= 25)
+        {
+            return "FD";
+        }
+        // FF
+        else
+        {
+            return "FF";
+        }
     }
 }
