@@ -24,6 +24,13 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
 
     public void Hesapla(View view)
     {
+        String aa_text = "AA için gereken final notu: ";
+        String ba_text = "BA için gereken final notu: ";
+        String bb_text = "BB için gereken final notu: ";
+        String cb_text = "CB için gereken final notu: ";
+        String cc_text = "CC için gereken final notu: ";
+        String dc_text = "DC ile şartlı geçmek için gereken final notu: ";
+
         EditText vize = findViewById(R.id.editText);
         String str_vize = vize.getText().toString();
         int vize_num = Integer.parseInt(str_vize);
@@ -51,6 +58,13 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
         TextView textView_cb = findViewById(R.id.textView7);
         TextView textView_cc = findViewById(R.id.textView8);
         TextView textView_dc = findViewById(R.id.textView9);
+
+        textView_aa.setText(aa_text);
+        textView_ba.setText(ba_text);
+        textView_bb.setText(bb_text);
+        textView_cb.setText(cb_text);
+        textView_cc.setText(cc_text);
+        textView_dc.setText(dc_text);
 
         textView_aa.append(String.valueOf(Math.round(aa)));
         textView_ba.append(String.valueOf(Math.round(ba)));

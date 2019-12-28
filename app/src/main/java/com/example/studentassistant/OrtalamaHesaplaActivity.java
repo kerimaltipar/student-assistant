@@ -21,6 +21,7 @@ public class OrtalamaHesaplaActivity extends AppCompatActivity {
 
     public void Hesapla(View view)
     {
+        String ortalama_text = "Ortalama: ";
         EditText editText_vize = findViewById(R.id.editText2);
         EditText editText_final = findViewById(R.id.editText3);
 
@@ -33,6 +34,7 @@ public class OrtalamaHesaplaActivity extends AppCompatActivity {
         float ortalama = (((float)vize_num * 2) / 5) + (((float)final_num * 3) / 5);
 
         TextView textView_ortalama = findViewById(R.id.textView10);
+        textView_ortalama.setText(ortalama_text);
         textView_ortalama.append(String.valueOf(ortalama));
 
         // Close keyboard
