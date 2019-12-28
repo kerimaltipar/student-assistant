@@ -2,8 +2,10 @@ package com.example.studentassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -26,9 +28,13 @@ public class OrtalamaHesaplaActivity extends AppCompatActivity {
         int vize_num = Integer.parseInt(vize_str);
         int final_num = Integer.parseInt(final_str);
 
-        float ortalama = ((vize_num * 2) / 5) + ((final_num * 3) / 5);
+        float ortalama = (((float)vize_num * 2) / 5) + (((float)final_num * 3) / 5);
 
         TextView textView_ortalama = findViewById(R.id.textView10);
         textView_ortalama.append(String.valueOf(ortalama));
+
+        // Close keyboard
+        InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
 }
