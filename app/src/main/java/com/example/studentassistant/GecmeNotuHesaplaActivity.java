@@ -2,9 +2,11 @@ package com.example.studentassistant;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -56,5 +58,9 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
         textView_dc.append(String.valueOf(Math.round(dc)));
 
         //Log.d("aa", String.valueOf(aa));
+
+        // Close keyboard
+        InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
 }
