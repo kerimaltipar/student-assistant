@@ -3,6 +3,7 @@ package com.example.studentassistant;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -47,5 +48,7 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
         textView_cb.append(String.valueOf(cb));
         textView_cc.append(String.valueOf(cc));
         textView_dc.append(String.valueOf(dc));
+
+        Log.d("var", String.valueOf(aa));
     }
 }
