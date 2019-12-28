@@ -16,14 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void GecmeNotuHesapla(View view)
     {
-        finish();
+        //finish();
         Intent i = new Intent(this, GecmeNotuHesaplaActivity.class);
         startActivity(i);
     }
 
     public void  OrtalamaHesapla(View view)
     {
-        finish();
+        //finish();
         Intent i = new Intent(this, OrtalamaHesaplaActivity.class);
         startActivity(i);
     }
