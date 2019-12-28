@@ -15,6 +15,8 @@ public class OrtalamaHesaplaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ortalama_hesapla);
+
+        setTitle("Ortalama Hesapla");
     }
 
     public void Hesapla(View view)

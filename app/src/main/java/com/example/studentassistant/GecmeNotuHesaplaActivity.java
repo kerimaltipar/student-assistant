@@ -18,6 +18,8 @@ public class GecmeNotuHesaplaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gecme_notu_hesapla);
+
+        setTitle("Gecme Notu Hesapla");
     }
 
     public void Hesapla(View view)
